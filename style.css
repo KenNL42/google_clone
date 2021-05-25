@@ -1,0 +1,233 @@
+.header_nav {
+    display: flex;
+    padding: 5px 15px;
+    align-items: center;
+}
+
+body{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    align-self: flex-start;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.about{
+    padding: 5px;
+}
+
+.gmail {
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header_nav div div{
+    padding: 5px;
+}
+
+#menu:hover{
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+#signin{
+    background-color: #1a73e8;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+#signin a{  
+    color: white;
+    text-decoration: none;
+}
+#signin:hover{
+    background-color: #3582e7;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+}
+
+.search{
+    border: 1px solid #dfe1e5;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 0 10px;
+    height: auto;
+    display: flex;
+}
+
+input{
+    min-height: 30px;
+    width: 30vw;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+#search_logo{
+    padding: 5px 0px;
+}
+
+.search_button{
+    display: flex;
+    flex-direction: row;
+    padding-top: 18px;
+    justify-content: center;
+}
+
+.search_button div{
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search_button div:hover{
+    border: 0px solid #c0c0c0;
+    box-shadow: 0px 0px 5px silver;
+}
+
+.search_button a:hover{
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    /* padding: 15px; */
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    /* justify-content: space-between; */
+    /* padding-right: 15px; */
+}
+
+footer a {
+    color: #70757a;
+}
+
+.footer_nav{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 15px;
+}
+
+.footer_nav2{
+    display: flex;
+    justify-content: flex-end;
+    right: 0px;
+    width: 50%;
+    padding: 15px;
+}
+
+#popup{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid lightgray;
+    border-radius: 3%;
+    /* display: none; */
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 10px silver;
+}
+
+#popup div{
+    width: 90px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("img/google-apps-icon.jpg");
+    background-size: 565%;
+    margin: 5px;
+}
+
+#popup div:hover{
+    cursor: pointer;
+    border: 0px solid black;
+    border-radius: 5%;
+    background-color: rgb(208, 227, 240);
+}
+
+#popup div a{
+    position: relative;
+    top: 75%;
+    text-decoration: none;
+}
+
+#calendar{
+    background-position: 0px -15px;
+}
+
+#docs{
+    background-position: -71px -15px;
+}
+
+#sheets{
+    background-position: -140px -15px;
+}
+
+#slides{
+    background-position: -207px -15px;
+}
+
+#gmail{
+    background-position: -276px -15px;
+}
+
+#drive{
+    background-position: -346px -15px;
+}
+
+#hangout{
+    background-position: -417px -15px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 15px;
+    }
+    .footer_nav2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* right: 0px; */
+        width: auto;
+        padding: 15px;
+        padding-top: 0%;
+    }
+}
